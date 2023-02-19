@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>My Page</h1>
+    <form>
+      <label for="rawInput">Input:</label><br>
+      <textarea id="rawInput" name="rawInput" rows="5" cols="30" style="
+      height: 175px;"></textarea>
+      <div class="outputs" style="display: inline-block; margin-left: 10px;">
+        <label for="ip">IP:</label><br>
+        <textarea id="ip" name="ip" rows="5" cols="15"></textarea><br>
+        <label for="rusIp">rusIP:</label><br>
+        <textarea id="rusIp" name="rusIp" rows="5" cols="15"></textarea><br>
+        <label for="unip">UNIP:</label><br>
+        <textarea id="unip" name="unip" rows="5" cols="15"></textarea><br>
+        <label for="url">URL:</label><br>
+        <textarea id="url" name="url" rows="5" cols="15"></textarea><br>
+        <label for="unurl">URL:</label><br>
+        <textarea id="unurl" name="unurl" rows="5" cols="15"></textarea><br>
+        <!-- Refresh button -->
+        <button id="refresh" type="button">Refresh</button>
+        <!-- Edit button -->
+        <button id="edit" type="button">Edit</button>
+        <!-- Reset button -->
+        <button id="reset" type="button">Reset</button>
+      </div>
+      <br>
+      <button id="submit" type="submit">Submit</button>
+      <button id="clear" type="button">Clear</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
