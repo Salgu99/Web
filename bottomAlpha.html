@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="myButton">Click me</button>
+    <div id="inputForms" style="display:none">
+        <button id="toggle">Toggle</button>
+        <form>
+            <input type="text" id="name" name="name" placeholder="이름" />
+        </form>
+        <form>
+            <input type="email" id="email" name="email" placeholder="example@abc.com" />
+        </form>
+        <form>
+            <input type="password" id="password" name="password" placeholder="" />
+        </form>
+        <form>
+            <input type="date" id="dob" name="dob" placeholder="" />
+        </form>
+        <form>
+            <input type="tel" id="phone" name="phone" placeholder="000-0000-0000" />
+        </form>
+    </div>
+
+      <style>
+        form {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+      </style>
+    
+    <script>
+        const myButton = document.getElementById('myButton');
+        const inputForms = document.getElementById('inputForms');
+        const toggleButton = document.getElementById('toggle');
+
+        myButton.addEventListener('click', function() {
+        inputForms.style.display = 'block';
+        });
+
+        toggleButton.addEventListener('click', function(){
+            inputForms.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
